@@ -24,7 +24,7 @@ void main()
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
 			scanf("%d",&a[i][j]);
-	printf("BFS order :\n");		
+	printf("DFS order :\n");		
 	dfs(0);
 	for(i=0;i<n;i++)
 	{
