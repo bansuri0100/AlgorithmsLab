@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function multiplyBy()
+		{
+			var num1=document.getElementById("firstNumber").value;
+			var num2=document.getElementById("secondNumber").value;
+			if(num1&&num2&&num1>0&&num2>0)
+			{
+				document.getElementById("result").innerHTML=Number(num1)*Number(num2);
+			}
+			else
+			{
+					document.getElementById("result").innerHTML="please enter valid positie numbers";
+			}
+		}
+		function addBy()
+		{
+			var num1=document.getElementById("firstNumber").value;
+			var num2=document.getElementById("secondNumber").value;
+			document.getElementById("result").innerHTML=Number(num1)+Number(num2);
+		}
+	</script>
+	
+	<!--<meta charset=utf-8 /> -->
+	<title>JavaScript Program to add and multiply 2 numbers.</title>
+	<style> type ="text/css"
+	body {margin:30px;}
+	</style>
+	</head>
+<body>
+	<form>
+		1st Number:<input type="text" id="firstNumber"/><br>
+		2nd Number:<input type="text" id="secondNumber"/><br>
+		<input type="button" onClick=multiplyBy() Value="Multiply"/>
+		<input type="button"onClick=addBy() Value="Add"/>
+	</form>
+	<p>The result is :<br>
+		<span id="result"></span>
+	</p>
+
+</body>
+</html>
+						
 
